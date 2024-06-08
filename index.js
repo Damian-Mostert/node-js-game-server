@@ -5,6 +5,10 @@ const { Server } = require("socket.io");
 const express = require("express");
 const app = express();
 
+app.get("/test",(req,res) =>{
+  res.send("test")
+})
+
 const server = http.createServer(app);
 
 
